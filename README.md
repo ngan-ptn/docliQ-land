@@ -25,6 +25,13 @@ docliQ-land/
 ├── guidelines/       # Shared guidelines for all versions
 │   ├── visual/       # Visual design guidelines, style guides
 │   └── compliance/   # GDPR, accessibility, regulatory docs
+├── knowledge/        # Iterative knowledge accumulation
+│   ├── HOW-KNOWLEDGE-WORKS.md
+│   ├── decision-log.md
+│   ├── pattern-library.md
+│   ├── knowledge-log.md
+│   ├── lessons-learned.md
+│   └── sum-changed.md
 └── versions/
     ├── v1/           # First version
     ├── v2/           # Second version (when created)
