@@ -22,6 +22,9 @@ docliQ-land/
 │   ├── doctor.json
 │   ├── appointment.json
 │   └── ...
+├── guidelines/       # Shared guidelines for all versions
+│   ├── visual/       # Visual design guidelines, style guides
+│   └── compliance/   # GDPR, accessibility, regulatory docs
 └── versions/
     ├── v1/           # First version
     ├── v2/           # Second version (when created)
