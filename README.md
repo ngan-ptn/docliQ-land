@@ -32,6 +32,8 @@ docliQ-land/
 │   ├── knowledge-log.md
 │   ├── lessons-learned.md
 │   └── sum-changed.md
+├── workflows/        # Design workflows
+│   └── README.md
 └── versions/
     ├── v1/           # First version
     ├── v2/           # Second version (when created)
