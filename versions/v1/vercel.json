@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "bun run build",
+  "installCommand": "bun install",
+  "framework": null,
+  "outputDirectory": "apps/web/dist",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api"
+    },
+    {
+      "source": "/trpc/:path*",
+      "destination": "/api"
+    }
+  ],
+  "functions": {
+    "apps/server/api/index.ts": {
+      "runtime": "edge"
+    }
+  }
+}
