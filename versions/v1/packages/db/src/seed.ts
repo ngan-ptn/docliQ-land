@@ -19,21 +19,21 @@ import {
   notifications,
 } from "./schema";
 
-// Import fixture data
-import specialtyData from "../fixtures/specialty.json";
-import appointmentTypeData from "../fixtures/appointment_type.json";
-import insuranceData from "../fixtures/insurance.json";
-import addressData from "../fixtures/address.json";
-import gdprConsentData from "../fixtures/gdpr_consent.json";
-import availabilityPrefsData from "../fixtures/availability_prefs.json";
-import userData from "../fixtures/user.json";
-import familyMemberData from "../fixtures/family_member.json";
-import doctorData from "../fixtures/doctor.json";
-import timeSlotData from "../fixtures/time_slot.json";
-import appointmentData from "../fixtures/appointment.json";
-import myDoctorEntryData from "../fixtures/my_doctor_entry.json";
-import newsArticleData from "../fixtures/news_article.json";
-import notificationData from "../fixtures/notification.json";
+// Import fixture data from shared location
+import specialtyData from "../../../../../fixtures/specialty.json";
+import appointmentTypeData from "../../../../../fixtures/appointment_type.json";
+import insuranceData from "../../../../../fixtures/insurance.json";
+import addressData from "../../../../../fixtures/address.json";
+import gdprConsentData from "../../../../../fixtures/gdpr_consent.json";
+import availabilityPrefsData from "../../../../../fixtures/availability_prefs.json";
+import userData from "../../../../../fixtures/user.json";
+import familyMemberData from "../../../../../fixtures/family_member.json";
+import doctorData from "../../../../../fixtures/doctor.json";
+import timeSlotData from "../../../../../fixtures/time_slot.json";
+import appointmentData from "../../../../../fixtures/appointment.json";
+import myDoctorEntryData from "../../../../../fixtures/my_doctor_entry.json";
+import newsArticleData from "../../../../../fixtures/news_article.json";
+import notificationData from "../../../../../fixtures/notification.json";
 
 async function seed() {
   console.log("🌱 Seeding database...\n");

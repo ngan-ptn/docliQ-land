@@ -17,6 +17,11 @@ Each version is a fully independent application with:
 ```
 docliQ-land/
 ├── README.md
+├── fixtures/         # Shared fixture data for all versions
+│   ├── user.json
+│   ├── doctor.json
+│   ├── appointment.json
+│   └── ...
 └── versions/
     ├── v1/           # First version
     ├── v2/           # Second version (when created)
@@ -82,8 +87,9 @@ bun run db:studio
 
 ## Versioning Philosophy
 
-Each version is **fully independent** - no shared code between versions. This allows:
+Each version is **fully independent** - no shared code between versions (except fixture data). This allows:
 
 - Clean experimentation without breaking existing versions
 - Easy comparison between different implementations
 - Simple rollback by switching to a previous version folder
+- Consistent test data across all versions via shared fixtures
