@@ -17,6 +17,8 @@ docliQ-land/
 
 | Command | When to Use |
 |---------|-------------|
+| `/commit` | Commit changes with auto-generated message (max 100 chars) |
+| `/resolve-conflict` | Safely resolve git merge/rebase conflicts |
 | `/knowledge:during` | During development - capture a learning immediately |
 | `/knowledge:weekly` | Weekly - sync progress, review experiments |
 | `/knowledge:after` | After iteration - comprehensive review |

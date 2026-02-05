@@ -18,9 +18,136 @@ When user types these commands, follow the linked prompt:
 
 | Command | Prompt File |
 |---------|-------------|
+| `/commit` | See [commit prompt](#commit) |
+| `/resolve-conflict` | See [resolve-conflict prompt](#resolve-conflict) |
 | `/knowledge:during` | See [knowledge-during prompt](#knowledge-during) |
 | `/knowledge:weekly` | See [knowledge-weekly prompt](#knowledge-weekly) |
 | `/knowledge:after` | See [knowledge-after prompt](#knowledge-after) |
+
+---
+
+## commit
+
+**Trigger:** User types `/commit`
+
+**Purpose:** Auto-generate commit message and commit changes.
+
+**Steps:**
+
+1. Run `git status` and `git diff` to understand changes
+
+2. Generate commit message (MAX 100 CHARACTERS):
+
+   Format: `type(scope): description`
+
+   Types:
+   - `feat` - New feature
+   - `fix` - Bug fix
+   - `docs` - Documentation
+   - `style` - Formatting
+   - `refactor` - Code restructure
+   - `test` - Tests
+   - `chore` - Build/tooling
+
+   Rules:
+   - Max 100 characters total
+   - Lowercase, no period at end
+   - Focus on WHAT changed
+
+3. Show user:
+   ```
+   📝 Proposed commit:
+   ─────────────────────────
+   [message]
+   ─────────────────────────
+   Files: [list]
+   ```
+
+4. Ask: "Commit with this message? (y/n/edit)"
+
+5. If confirmed:
+   ```bash
+   git add [specific files]
+   git commit -m "[message]"
+   ```
+
+6. Ask: "Push to remote? (y/n)" - ONLY push if confirmed
+
+**Rules:**
+- NEVER push without asking
+- NEVER use `git add .` - add specific files
+- NEVER commit .env or credentials
+
+---
+
+## resolve-conflict
+
+**Trigger:** User types `/resolve-conflict`
+
+**Purpose:** Safely resolve git merge/rebase conflicts.
+
+**Prime Directive:** Resolve conflicts, not decide behaviour. If you cannot explain why a line exists, STOP.
+
+**One-Line Law:** Resolve by composing intent with minimal change; never guess, never refactor, never weaken behaviour.
+
+**Steps:**
+
+1. Run `git status` to find conflicted files
+
+2. For each file, analyze both sides:
+   - What does `main` intend?
+   - What does feature branch intend?
+   - Can both coexist?
+
+3. Apply resolution following rules below
+
+4. Output THREE sections (MANDATORY):
+   ```
+   ## Resolved Code
+   [merged code]
+
+   ## Decision Summary
+   - Kept from main: [what]
+   - Kept from feature: [what]
+   - Removed: [what and WHY]
+
+   ## Risk Notes
+   - [what needs manual review]
+   ```
+
+5. Apply resolution, then `git add [file]`
+
+**General Rules:**
+- Preserve ALL behaviour from both sides
+- Prefer composition over replacement
+- Smallest possible diff
+- NEVER refactor unrelated code
+- NEVER delete logic silently
+
+**Branch Semantics:**
+- `main` = production truth (wins on breaking changes)
+- Feature = layered intent (must adapt to main)
+
+**File-Type Rules:**
+
+| Type | Rule |
+|------|------|
+| Frontend | Combine validation/guards, preserve accessibility |
+| Backend | NEVER weaken auth/security, preserve logging |
+| Tests | NEVER delete tests, keep stricter assertions |
+| Config | Prefer additive, prefer main values |
+
+**FORBIDDEN:**
+- Choose "ours"/"theirs" blindly
+- Refactor or clean up
+- Simplify logic
+- Apply "best practices"
+
+**STOP and ask human if:**
+- Both sides change behaviour incompatibly
+- Touches auth, security, payments, data models
+- Would delete >20% of file
+- Cannot explain final behaviour
 
 ---
 
