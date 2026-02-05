@@ -1,4 +1,4 @@
-# AI Instructions for docliQ-land
+# Claude Instructions for docliQ-land
 
 ## Repository Overview
 
@@ -10,12 +10,10 @@ docliQ-land/
 ├── guidelines/       # Visual & compliance guidelines
 ├── knowledge/        # Iterative knowledge system
 ├── versions/         # Independent app versions (v1, v2, ...)
-└── .claude/skills/   # Project-specific AI skills
+└── .claude/skills/   # Claude-specific skills
 ```
 
-## Available Skills
-
-These slash commands are available in this repository:
+## Available Skills (Slash Commands)
 
 | Command | When to Use |
 |---------|-------------|
@@ -23,15 +21,19 @@ These slash commands are available in this repository:
 | `/knowledge:weekly` | Weekly - sync progress, review experiments |
 | `/knowledge:after` | After iteration - comprehensive review |
 
+Skills are defined in `.claude/skills/` folder.
+
 ## Knowledge System
 
 The `/knowledge/` folder tracks learnings across versions:
 
-- `decision-log.md` - Why we chose X over Y
-- `pattern-library.md` - Reusable patterns
-- `knowledge-log.md` - Assumption → reality shifts
-- `lessons-learned.md` - Strategic insights
-- `sum-changed.md` - Progress tracker
+| File | Purpose |
+|------|---------|
+| `decision-log.md` | Why we chose X over Y |
+| `pattern-library.md` | Reusable patterns |
+| `knowledge-log.md` | Assumption → reality shifts |
+| `lessons-learned.md` | Strategic insights |
+| `sum-changed.md` | Progress tracker |
 
 ### Tagging
 
@@ -53,14 +55,15 @@ Each version in `/versions/` is fully independent. When working on a version:
 
 ## Shared Resources
 
-- **Fixtures** (`/fixtures/`): Shared test data, imported by each version's seed script
+- **Fixtures** (`/fixtures/`): Shared test data for all versions
 - **Guidelines** (`/guidelines/`): Design and compliance docs
 - **Knowledge** (`/knowledge/`): Cross-version learnings
 
-## AI Behavior
+## AI Behavior Rules
 
 When working in this repo:
-- Always check which version you're working in
+- Check which version you're working in before making changes
 - Document learnings using `/knowledge:during`
-- Don't share code between versions (except fixtures/guidelines)
-- Refer to `/knowledge/` before making architectural decisions
+- Don't share code between versions (only fixtures/guidelines/knowledge)
+- Read `/knowledge/` before making architectural decisions
+- Apply proper tags when documenting patterns
