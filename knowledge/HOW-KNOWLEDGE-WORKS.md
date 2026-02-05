@@ -1,8 +1,8 @@
-# Cross-Cutting Knowledge Guide for docliQ-land
+# Iterative Knowledge Guide for docliQ-land
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                    CROSS-CUTTING KNOWLEDGE SYSTEM                       │
+│                    ITERATIVE KNOWLEDGE SYSTEM                       │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
 │   ┌─────────────────────────────────────────────────────────────────┐   │
@@ -18,7 +18,7 @@
 │                              │                                          │
 │   ┌─────────────────────────────────────────────────────────────────┐   │
 │   │  VERSION LEVEL                                                  │   │
-│   │  /versions/v*/docs/cross-cutting/                               │   │
+│   │  /versions/v*/docs/iterative-knowledge/                               │   │
 │   │  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐            │   │
 │   │  │decision-log  │ │pattern-lib   │ │lessons-learn │            │   │
 │   │  │[Reusable]    │ │[Experiment]  │ │[Version-spec]│            │   │
@@ -182,7 +182,7 @@
 | Level | Path | Contains |
 |-------|------|----------|
 | Workspace | `/knowledge/` | Cross-version standards |
-| Version | `/versions/v*/docs/cross-cutting/` | Version-specific |
+| Version | `/versions/v*/docs/iterative-knowledge/` | Version-specific |
 
 ### Files
 
