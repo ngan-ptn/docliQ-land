@@ -95,6 +95,28 @@ bun run db:push
 bun run db:studio
 ```
 
+## Knowledge Commands
+
+Run from the repo root:
+
+```bash
+# During development - when you learn something
+bun run knowledge:during
+
+# Weekly - track progress and review experiments
+bun run knowledge:weekly
+
+# After iteration - comprehensive review and extraction
+bun run knowledge:after
+```
+
+Or run scripts directly:
+```bash
+./scripts/knowledge-during.sh
+./scripts/knowledge-weekly.sh
+./scripts/knowledge-after-iteration.sh
+```
+
 ## Versioning Philosophy
 
 Each version is **fully independent** - no shared code between versions (except fixture data). This allows:

@@ -1,0 +1,9 @@
+{
+  "name": "docliq-land",
+  "private": true,
+  "scripts": {
+    "knowledge:during": "./scripts/knowledge-during.sh",
+    "knowledge:weekly": "./scripts/knowledge-weekly.sh",
+    "knowledge:after": "./scripts/knowledge-after-iteration.sh"
+  }
+}
