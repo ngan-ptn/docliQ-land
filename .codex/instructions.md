@@ -23,6 +23,9 @@ When user types these commands, follow the linked prompt:
 | `/knowledge:during` | See [knowledge-during prompt](#knowledge-during) |
 | `/knowledge:weekly` | See [knowledge-weekly prompt](#knowledge-weekly) |
 | `/knowledge:after` | See [knowledge-after prompt](#knowledge-after) |
+| `/ooux-dot-map` | See [ooux-dot-map prompt](#ooux-dot-map) |
+| `/info-map` | See [info-map prompt](#info-map) |
+| `/user-flows` | See [user-flows prompt](#user-flows) |
 
 ---
 
@@ -319,6 +322,145 @@ When user types these commands, follow the linked prompt:
    □ Tags applied
    □ sum-changed.md updated
    ```
+
+---
+
+## ooux-dot-map
+
+**Trigger:** User types `/ooux-dot-map`
+
+**Purpose:** Generate an Entity Relationship diagram using OOUX (Object-Oriented UX) technique for the current app/feature.
+
+**Context Sources:**
+
+1. **Database Schema:** `versions/v1/packages/db/src/schema/index.ts`
+2. **Fixture Data:** `/fixtures/*.json`
+3. **API Routes:** `versions/v1/apps/server/src/` (if available)
+4. **Frontend Routes:** `versions/v1/apps/web/src/routes/` (if available)
+
+**Steps:**
+
+1. **Analyze the codebase:**
+   - Read the database schema to identify entities and relationships
+   - Read fixtures to understand data structure and examples
+   - Identify which entities are core vs supporting
+
+2. **Identify Objects:**
+   - **Core Objects:** Main entities users interact with directly
+   - **Supporting Objects:** Entities that support core objects
+
+3. **For each object, extract:**
+   - **Attributes:** All properties/columns from schema
+   - **Actions:** CRUD operations + domain-specific actions
+   - **Relationships:** Foreign keys, cardinality (1:1, 1:M, M:M)
+
+4. **Generate output following template at `/workflows/ooux-dot-map.md`:**
+   - Mermaid diagram showing objects and relationships
+   - Object descriptions with attributes and actions
+   - Relationship table with cardinality
+   - (Optional) User flows if routes suggest them
+   - (Optional) State lifecycle if status fields exist
+
+5. **Output location:**
+   - Save to `docs/ooux/[feature-name]-dot-map.md`
+   - Or display in conversation if user prefers
+
+**Rules:**
+- Base analysis on ACTUAL code, not assumptions
+- Include ALL entities from schema
+- Mark relationships with correct cardinality
+- Keep descriptions concise but complete
+
+---
+
+## info-map
+
+**Trigger:** User types `/info-map`
+
+**Purpose:** Generate an Information Architecture (IA) Map for the current app/feature.
+
+**Context Sources:**
+
+1. **Frontend Routes:** `versions/v1/apps/web/src/routes/`
+2. **Database Schema:** `versions/v1/packages/db/src/schema/index.ts`
+3. **Components:** `versions/v1/apps/web/src/components/`
+
+**Steps:**
+
+1. **Analyze the codebase:**
+   - Read route files to identify all screens and navigation paths
+   - Identify route hierarchy and groupings
+   - Find status fields in schema for lifecycle diagrams
+
+2. **Document Structure:**
+   - **Sections:** Group screens by feature/domain
+   - **Hierarchy:** Create tree structure of all screens
+   - **Routes:** Map URL paths to screen components
+
+3. **Generate Outputs following template at `/workflows/info-map.md`:**
+   - High-level structure (ASCII tree)
+   - Master IA diagram (Mermaid flowchart)
+   - Navigation paths table
+   - Status lifecycle diagrams (if applicable)
+   - Route structure tables
+   - Screen inventory
+
+4. **Output location:**
+   - Save to `docs/ia/[feature-name]-ia-map.md`
+   - Or display in conversation if user prefers
+
+**Rules:**
+- Base analysis on ACTUAL route files
+- Include ALL routes found in the codebase
+- Group screens logically by feature domain
+- Document status lifecycles if status fields exist
+
+---
+
+## user-flows
+
+**Trigger:** User types `/user-flows`
+
+**Purpose:** Generate User Flow documentation for the current app/feature.
+
+**Context Sources:**
+
+1. **Frontend Routes:** `versions/v1/apps/web/src/routes/`
+2. **Database Schema:** `versions/v1/packages/db/src/schema/index.ts`
+3. **Fixture Data:** `/fixtures/*.json`
+4. **API Routes:** `versions/v1/apps/server/src/`
+
+**Steps:**
+
+1. **Identify Jobs-to-be-Done:**
+   - Map main user goals to Job IDs (J1, J2, etc.)
+   - Use format: "When I [situation], I want to [action] so that [outcome]"
+
+2. **Document Each Flow:**
+   - **Flow Steps:** Sequential user actions and system responses
+   - **Decision Points:** Branching logic and conditions
+   - **Objects Modified:** Which entities change state
+   - **Success Criteria:** How to measure completion
+
+3. **Create Flow Diagrams:**
+   - Mermaid flowcharts for each major flow
+   - Use subgraphs to group related steps
+   - Mark decision points with diamond shapes
+
+4. **Define Metrics:**
+   - Primary metric, target values, fallback metrics
+
+5. **Output location:**
+   - Save to `docs/flows/[feature-name]-user-flows.md`
+   - Or display in conversation if user prefers
+
+**Template:** Use `/workflows/user-flows.md`
+
+**Mermaid Styling:**
+- START/END: `fill:#000000,color:#ffffff`
+- Errors: `fill:#ffebee,stroke:#c62828`
+- Warnings: `fill:#fff3e0,stroke:#ef6c00`
+- Info/Processing: `fill:#e3f2fd,stroke:#1565c0`
 
 ---
 

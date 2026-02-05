@@ -22,6 +22,9 @@ docliQ-land/
 | `/knowledge:during` | During development - capture a learning immediately |
 | `/knowledge:weekly` | Weekly - sync progress, review experiments |
 | `/knowledge:after` | After iteration - comprehensive review |
+| `/ooux-dot-map` | Generate Entity Relationship diagram using OOUX technique |
+| `/info-map` | Generate Information Architecture (IA) Map |
+| `/user-flows` | Generate User Flow documentation with JTBD |
 
 Skills are defined in `.claude/skills/` folder.
 
