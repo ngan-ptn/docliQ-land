@@ -1,0 +1,121 @@
+{
+  "object": "appointment",
+  "count": 4,
+  "items": [
+    {
+      "id": "appt_9001",
+      "doctorId": "doc_1001",
+      "doctorName": "Dr. Lena Hoffmann",
+      "specialtyId": "spec_peds",
+      "forUserId": "user_001",
+      "forUserName": "Emma Pham",
+      "forFamilyMemberId": "fm_001",
+      "dateIso": "2026-02-06",
+      "time": "15:00",
+      "timeSlotId": "ts_0001",
+      "status": "confirmed",
+      "appointmentType": "follow_up",
+      "reminderSet": true,
+      "calendarSynced": true,
+      "notes": "Follow-up for asthma control plan. Bring inhaler.",
+      "feedback": {
+        "rating": null,
+        "comment": null
+      },
+      "cancelReason": null,
+      "changeHistory": [
+        {
+          "changedAt": "2026-02-02T13:00:00",
+          "field": "appointmentType",
+          "from": "prevention_wellness",
+          "to": "follow_up",
+          "reason": "Previous visit indicated follow-up needed."
+        }
+      ]
+    },
+    {
+      "id": "appt_9002",
+      "doctorId": null,
+      "doctorName": null,
+      "specialtyId": "spec_gp",
+      "forUserId": "user_001",
+      "forUserName": "Ngan Pham",
+      "forFamilyMemberId": null,
+      "dateIso": null,
+      "time": null,
+      "timeSlotId": null,
+      "status": "matching",
+      "appointmentType": "acute_urgent",
+      "reminderSet": false,
+      "calendarSynced": false,
+      "notes": "Sore throat + fever for 2 days. Need quick consultation.",
+      "feedback": {
+        "rating": null,
+        "comment": null
+      },
+      "cancelReason": null,
+      "changeHistory": []
+    },
+    {
+      "id": "appt_9003",
+      "doctorId": "doc_1003",
+      "doctorName": "Dr. Aylin Demir",
+      "specialtyId": "spec_derm",
+      "forUserId": "user_001",
+      "forUserName": "Ngan Pham",
+      "forFamilyMemberId": null,
+      "dateIso": "2026-02-12",
+      "time": "10:30",
+      "timeSlotId": "ts_0011",
+      "status": "await_confirm",
+      "appointmentType": "prevention_wellness",
+      "reminderSet": true,
+      "calendarSynced": false,
+      "notes": "Annual skin check. Prefer mornings.",
+      "feedback": {
+        "rating": null,
+        "comment": null
+      },
+      "cancelReason": null,
+      "changeHistory": []
+    },
+    {
+      "id": "appt_9004",
+      "doctorId": "doc_1002",
+      "doctorName": "Dr. Jonas Weber",
+      "specialtyId": "spec_gp",
+      "forUserId": "user_001",
+      "forUserName": "Ngan Pham",
+      "forFamilyMemberId": null,
+      "dateIso": "2026-01-20",
+      "time": "09:00",
+      "timeSlotId": "ts_0007",
+      "status": "completed",
+      "appointmentType": "follow_up",
+      "reminderSet": true,
+      "calendarSynced": true,
+      "notes": "Discuss lab results.",
+      "feedback": {
+        "rating": 5,
+        "comment": "Very clear explanations, quick check-in."
+      },
+      "cancelReason": null,
+      "changeHistory": [
+        {
+          "changedAt": "2026-01-18T11:10:00",
+          "field": "status",
+          "from": "confirmed",
+          "to": "modified_by_practice",
+          "reason": "Doctor schedule change"
+        },
+        {
+          "changedAt": "2026-01-18T11:15:00",
+          "field": "status",
+          "from": "modified_by_practice",
+          "to": "confirmed",
+          "reason": "User accepted new time"
+        }
+      ]
+    }
+  ]
+}

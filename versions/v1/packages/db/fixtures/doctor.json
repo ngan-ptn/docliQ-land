@@ -1,0 +1,78 @@
+{
+  "object": "doctor",
+  "count": 3,
+  "items": [
+    {
+      "id": "doc_1001",
+      "name": "Dr. Lena Hoffmann",
+      "specialtyId": "spec_peds",
+      "city": "Berlin",
+      "address": {
+        "street": "Karl-Marx-Allee 77",
+        "postalCode": "10243",
+        "city": "Berlin"
+      },
+      "rating": 4.7,
+      "reviewCount": 128,
+      "acceptsInsurance": [
+        "GKV",
+        "PKV"
+      ],
+      "nextAvailableIso": "2026-02-06T15:00:00",
+      "languages": [
+        "de",
+        "en",
+        "tr"
+      ],
+      "imageUrl": "https://example.com/d/doc_1001.jpg",
+      "about": "Pediatrician focused on preventive care and asthma management."
+    },
+    {
+      "id": "doc_1002",
+      "name": "Dr. Jonas Weber",
+      "specialtyId": "spec_gp",
+      "city": "Berlin",
+      "address": {
+        "street": "Torstraße 33",
+        "postalCode": "10119",
+        "city": "Berlin"
+      },
+      "rating": 4.4,
+      "reviewCount": 302,
+      "acceptsInsurance": [
+        "GKV"
+      ],
+      "nextAvailableIso": "2026-02-05T19:00:00",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "imageUrl": "https://example.com/d/doc_1002.jpg",
+      "about": "General practitioner—acute care triage and check-ups."
+    },
+    {
+      "id": "doc_1003",
+      "name": "Dr. Aylin Demir",
+      "specialtyId": "spec_derm",
+      "city": "Berlin",
+      "address": {
+        "street": "Sonnenallee 15",
+        "postalCode": "12045",
+        "city": "Berlin"
+      },
+      "rating": 4.2,
+      "reviewCount": 89,
+      "acceptsInsurance": [
+        "PKV",
+        "GKV"
+      ],
+      "nextAvailableIso": "2026-02-12T14:00:00",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "imageUrl": "https://example.com/d/doc_1003.jpg",
+      "about": "Dermatology—acne, eczema, and skin checks."
+    }
+  ]
+}

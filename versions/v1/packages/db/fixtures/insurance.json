@@ -1,0 +1,27 @@
+{
+  "object": "insurance",
+  "count": 3,
+  "items": [
+    {
+      "id": "ins_u1",
+      "type": "GKV",
+      "egkNumber": "AOK-1234-5678-9012",
+      "provider": "AOK Nordost",
+      "isDefault": true
+    },
+    {
+      "id": "ins_fm1",
+      "type": "GKV",
+      "egkNumber": "AOK-2234-0000-1111",
+      "provider": "AOK Nordost",
+      "isDefault": true
+    },
+    {
+      "id": "ins_fm2",
+      "type": "GKV",
+      "egkNumber": "TK-8833-2211-0099",
+      "provider": "Techniker Krankenkasse",
+      "isDefault": true
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "object": "news_article",
+  "count": 2,
+  "items": [
+    {
+      "id": "news_001",
+      "category": "General",
+      "title": "How to prepare for your annual check-up",
+      "content": "A short checklist to get the most out of your routine appointment...",
+      "author": "DocliQ Editorial Team",
+      "readTimeMinutes": 4,
+      "imageUrl": "https://example.com/news/checkup.jpg",
+      "publishedAt": "2026-02-01T09:00:00",
+      "keyTakeaway": "Write down symptoms + medications before you go.",
+      "relatedTopics": [
+        "prevention_wellness",
+        "primary_care",
+        "wellness"
+      ]
+    },
+    {
+      "id": "news_002",
+      "category": "Nutrition",
+      "title": "Flu season basics: when to see a doctor",
+      "content": "Most flu cases can be managed at home, but watch for red flags...",
+      "author": "Dr. Jonas Weber",
+      "readTimeMinutes": 5,
+      "imageUrl": "https://example.com/news/flu.jpg",
+      "publishedAt": "2026-01-28T12:00:00",
+      "keyTakeaway": "Seek help for breathing trouble, dehydration, or symptoms >7 days.",
+      "relatedTopics": [
+        "acute_urgent",
+        "symptoms",
+        "telemedicine"
+      ]
+    }
+  ]
+}

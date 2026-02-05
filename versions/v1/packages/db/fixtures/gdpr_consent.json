@@ -1,0 +1,22 @@
+{
+  "object": "gdpr_consent",
+  "count": 1,
+  "items": [
+    {
+      "id": "consent_u1",
+      "userId": "user_001",
+      "dataProcessing": true,
+      "marketing": false,
+      "analytics": true,
+      "thirdPartySharing": false,
+      "consentDate": "2026-01-26T13:00:00",
+      "policyVersion": "2026.01",
+      "cookiePrefs": {
+        "essential": true,
+        "functional": true,
+        "analytics": true,
+        "marketing": false
+      }
+    }
+  ]
+}

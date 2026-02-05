@@ -1,0 +1,24 @@
+{
+  "object": "appointment_type",
+  "count": 3,
+  "items": [
+    {
+      "id": "apt_follow_up",
+      "value": "follow_up",
+      "label": "Follow-up",
+      "description": "Return visit with known doctor (Fast-Lane flow)"
+    },
+    {
+      "id": "apt_acute",
+      "value": "acute_urgent",
+      "label": "Acute / Urgent",
+      "description": "Immediate care needed (Specialty-First flow)"
+    },
+    {
+      "id": "apt_prev",
+      "value": "prevention_wellness",
+      "label": "Prevention / Wellness",
+      "description": "Routine checkup or screening (Doctor-First flow)"
+    }
+  ]
+}

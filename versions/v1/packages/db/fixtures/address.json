@@ -1,0 +1,24 @@
+{
+  "object": "address",
+  "count": 2,
+  "items": [
+    {
+      "id": "addr_u1_home",
+      "type": "residential",
+      "label": "Home",
+      "street": "Kantstraße 18",
+      "postalCode": "10623",
+      "city": "Berlin",
+      "isDefault": true
+    },
+    {
+      "id": "addr_u1_work",
+      "type": "work",
+      "label": "Work",
+      "street": "Friedrichstraße 120",
+      "postalCode": "10117",
+      "city": "Berlin",
+      "isDefault": false
+    }
+  ]
+}

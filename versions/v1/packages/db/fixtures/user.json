@@ -1,0 +1,23 @@
+{
+  "object": "user",
+  "count": 1,
+  "items": [
+    {
+      "id": "user_001",
+      "fullName": "Ngan Pham",
+      "email": "ngan.pham@example.com",
+      "phoneCountryCode": "+49",
+      "phone": "15123456789",
+      "dateOfBirth": "1996-08-12",
+      "gender": "female",
+      "insuranceId": "ins_u1",
+      "addressId": "addr_u1_home",
+      "identityVerified": true,
+      "phoneVerified": true,
+      "authProvider": "email_password",
+      "photoUrl": "https://example.com/u/ngan.jpg",
+      "gdprConsentId": "consent_u1",
+      "availabilityPrefsId": "avail_u1_default"
+    }
+  ]
+}

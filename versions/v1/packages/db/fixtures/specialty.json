@@ -1,0 +1,78 @@
+{
+  "object": "specialty",
+  "count": 12,
+  "items": [
+    {
+      "id": "spec_gp",
+      "labelKey": "specialty.primary_care",
+      "value": "Primary Care",
+      "category": "General"
+    },
+    {
+      "id": "spec_derm",
+      "labelKey": "specialty.dermatology",
+      "value": "Dermatology",
+      "category": "Skin"
+    },
+    {
+      "id": "spec_card",
+      "labelKey": "specialty.cardiology",
+      "value": "Cardiology",
+      "category": "Heart"
+    },
+    {
+      "id": "spec_peds",
+      "labelKey": "specialty.pediatrics",
+      "value": "Pediatrics",
+      "category": "Children"
+    },
+    {
+      "id": "spec_ortho",
+      "labelKey": "specialty.orthopedics",
+      "value": "Orthopedics",
+      "category": "Musculoskeletal"
+    },
+    {
+      "id": "spec_gyn",
+      "labelKey": "specialty.gynecology",
+      "value": "Gynecology",
+      "category": "Women's Health"
+    },
+    {
+      "id": "spec_ent",
+      "labelKey": "specialty.ent",
+      "value": "ENT (HNO)",
+      "category": "ENT"
+    },
+    {
+      "id": "spec_opht",
+      "labelKey": "specialty.ophthalmology",
+      "value": "Ophthalmology",
+      "category": "Eyes"
+    },
+    {
+      "id": "spec_neuro",
+      "labelKey": "specialty.neurology",
+      "value": "Neurology",
+      "category": "Nervous System"
+    },
+    {
+      "id": "spec_psych",
+      "labelKey": "specialty.psychiatry",
+      "value": "Psychiatry",
+      "category": "Mental Health"
+    },
+    {
+      "id": "spec_dent",
+      "labelKey": "specialty.dentistry",
+      "value": "Dentistry",
+      "category": "Dental"
+    },
+    {
+      "id": "spec_gastro",
+      "labelKey": "specialty.gastroenterology",
+      "value": "Gastroenterology",
+      "category": "Digestive"
+    }
+  ]
+}

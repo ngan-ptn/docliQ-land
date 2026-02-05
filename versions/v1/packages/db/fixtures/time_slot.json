@@ -1,0 +1,132 @@
+{
+  "object": "time_slot",
+  "count": 18,
+  "items": [
+    {
+      "id": "ts_0001",
+      "doctorId": "doc_1001",
+      "dateIso": "2026-02-05",
+      "time": "16:00",
+      "available": true
+    },
+    {
+      "id": "ts_0002",
+      "doctorId": "doc_1001",
+      "dateIso": "2026-02-05",
+      "time": "18:00",
+      "available": true
+    },
+    {
+      "id": "ts_0003",
+      "doctorId": "doc_1001",
+      "dateIso": "2026-02-06",
+      "time": "16:00",
+      "available": true
+    },
+    {
+      "id": "ts_0004",
+      "doctorId": "doc_1001",
+      "dateIso": "2026-02-06",
+      "time": "18:00",
+      "available": true
+    },
+    {
+      "id": "ts_0005",
+      "doctorId": "doc_1001",
+      "dateIso": "2026-02-07",
+      "time": "16:00",
+      "available": true
+    },
+    {
+      "id": "ts_0006",
+      "doctorId": "doc_1001",
+      "dateIso": "2026-02-07",
+      "time": "18:00",
+      "available": true
+    },
+    {
+      "id": "ts_0007",
+      "doctorId": "doc_1002",
+      "dateIso": "2026-02-07",
+      "time": "13:00",
+      "available": true
+    },
+    {
+      "id": "ts_0008",
+      "doctorId": "doc_1002",
+      "dateIso": "2026-02-07",
+      "time": "15:00",
+      "available": true
+    },
+    {
+      "id": "ts_0009",
+      "doctorId": "doc_1002",
+      "dateIso": "2026-02-08",
+      "time": "13:00",
+      "available": true
+    },
+    {
+      "id": "ts_0010",
+      "doctorId": "doc_1002",
+      "dateIso": "2026-02-08",
+      "time": "15:00",
+      "available": true
+    },
+    {
+      "id": "ts_0011",
+      "doctorId": "doc_1002",
+      "dateIso": "2026-02-09",
+      "time": "13:00",
+      "available": true
+    },
+    {
+      "id": "ts_0012",
+      "doctorId": "doc_1002",
+      "dateIso": "2026-02-09",
+      "time": "15:00",
+      "available": true
+    },
+    {
+      "id": "ts_0013",
+      "doctorId": "doc_1003",
+      "dateIso": "2026-02-05",
+      "time": "19:00",
+      "available": true
+    },
+    {
+      "id": "ts_0014",
+      "doctorId": "doc_1003",
+      "dateIso": "2026-02-05",
+      "time": "21:00",
+      "available": true
+    },
+    {
+      "id": "ts_0015",
+      "doctorId": "doc_1003",
+      "dateIso": "2026-02-06",
+      "time": "19:00",
+      "available": true
+    },
+    {
+      "id": "ts_0016",
+      "doctorId": "doc_1003",
+      "dateIso": "2026-02-06",
+      "time": "21:00",
+      "available": true
+    },
+    {
+      "id": "ts_0017",
+      "doctorId": "doc_1003",
+      "dateIso": "2026-02-07",
+      "time": "19:00",
+      "available": true
+    },
+    {
+      "id": "ts_0018",
+      "doctorId": "doc_1003",
+      "dateIso": "2026-02-07",
+      "time": "21:00",
+      "available": true
+    }
+  ]
+}

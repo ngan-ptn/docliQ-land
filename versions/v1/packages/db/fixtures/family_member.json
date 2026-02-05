@@ -1,0 +1,36 @@
+{
+  "object": "family_member",
+  "count": 2,
+  "items": [
+    {
+      "id": "fm_001",
+      "userId": "user_001",
+      "name": "Emma Pham",
+      "dateOfBirth": "2017-05-21",
+      "relationship": "child",
+      "insuranceId": "ins_fm1",
+      "verified": true,
+      "photoUrl": "https://example.com/fm/emma.jpg",
+      "emergencyContact": {
+        "name": "Ngan Pham",
+        "phone": "+49 15123456789"
+      },
+      "medicalNotes": "Asthma inhaler—bring to visits."
+    },
+    {
+      "id": "fm_002",
+      "userId": "user_001",
+      "name": "Max Pham",
+      "dateOfBirth": "2019-11-03",
+      "relationship": "child",
+      "insuranceId": "ins_fm2",
+      "verified": false,
+      "photoUrl": "https://example.com/fm/max.jpg",
+      "emergencyContact": {
+        "name": "Ngan Pham",
+        "phone": "+49 15123456789"
+      },
+      "medicalNotes": "Allergy: peanuts."
+    }
+  ]
+}

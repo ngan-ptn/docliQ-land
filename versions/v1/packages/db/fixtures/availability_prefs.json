@@ -1,0 +1,26 @@
+{
+  "object": "availability_prefs",
+  "count": 1,
+  "items": [
+    {
+      "id": "avail_u1_default",
+      "userId": "user_001",
+      "fullyFlexible": false,
+      "slots": [
+        {
+          "dayOfWeek": "mon",
+          "timeRange": "evening"
+        },
+        {
+          "dayOfWeek": "tue",
+          "timeRange": "afternoon"
+        },
+        {
+          "dayOfWeek": "thu",
+          "timeRange": "morning"
+        }
+      ],
+      "updatedAt": "2026-02-03T13:00:00"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "object": "notification",
+  "count": 3,
+  "items": [
+    {
+      "id": "noti_1001",
+      "userId": "user_001",
+      "type": "booking_update",
+      "title": "Appointment confirmed",
+      "message": "Your follow-up with Dr. Lena Hoffmann for Emma is confirmed for Feb 6, 15:00.",
+      "timestamp": "2026-02-05T08:05:00",
+      "unread": true,
+      "actionLabel": "View appointment",
+      "actionPath": "/appointments/appt_9001",
+      "relatedObject": {
+        "type": "appointment",
+        "id": "appt_9001"
+      }
+    },
+    {
+      "id": "noti_1002",
+      "userId": "user_001",
+      "type": "upcoming",
+      "title": "Reminder set: skin check",
+      "message": "Reminder is set for your skin check request. We’ll notify you when the practice confirms.",
+      "timestamp": "2026-02-04T18:20:00",
+      "unread": false,
+      "actionLabel": "Open requests",
+      "actionPath": "/appointments?tab=upcoming",
+      "relatedObject": {
+        "type": "appointment",
+        "id": "appt_9003"
+      }
+    },
+    {
+      "id": "noti_1003",
+      "userId": "user_001",
+      "type": "content",
+      "title": "New: Check-up checklist",
+      "message": "A quick checklist to prepare for your next prevention appointment.",
+      "timestamp": "2026-02-02T09:10:00",
+      "unread": true,
+      "actionLabel": "Read article",
+      "actionPath": "/news/news_001",
+      "relatedObject": {
+        "type": "news_article",
+        "id": "news_001"
+      }
+    }
+  ]
+}

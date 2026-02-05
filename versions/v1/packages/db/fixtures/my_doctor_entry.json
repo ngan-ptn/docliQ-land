@@ -1,0 +1,20 @@
+{
+  "object": "my_doctor_entry",
+  "count": 2,
+  "items": [
+    {
+      "id": "mde_001",
+      "userId": "user_001",
+      "doctorId": "doc_1001",
+      "lastBookedAt": "2026-02-01T08:20:00",
+      "addedAt": "2025-12-10T19:05:00"
+    },
+    {
+      "id": "mde_002",
+      "userId": "user_001",
+      "doctorId": "doc_1002",
+      "lastBookedAt": "2026-01-20T07:55:00",
+      "addedAt": "2025-11-05T10:40:00"
+    }
+  ]
+}
