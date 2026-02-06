@@ -6,7 +6,6 @@ This project was created with [Better-T-Stack](https://github.com/AmanVarshney01
 
 Configured for Vercel deployment with:
 - Edge Functions for backend API
-- Vercel Toolbar disabled for cleaner UX
 - See `vercel.json` for configuration
 
 ## Features

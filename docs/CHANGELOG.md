@@ -6,9 +6,6 @@ All notable changes to this project will be documented in this file.
 
 ## 2026-02-06
 
-### Vercel Deployment
-- Disabled Vercel Toolbar for all deployments (preview and production) to provide cleaner user experience
-
 ### Design Workflows
 - Added OOUX Dot Map workflow for Entity Relationship analysis using OOUX technique
 - Added Information Architecture (IA) Map workflow for documenting screen structure and navigation
