@@ -15,3 +15,7 @@ All notable changes to this project will be documented in this file.
 
 ### AI Skills
 - Extended Claude and Codex configurations with new design workflow commands
+
+### Guidelines
+- Updated visual-guideline-v2 to use docliq-tokens-v2.json as the design token source
+- Added copy-guideline.md and naming-conventions.md

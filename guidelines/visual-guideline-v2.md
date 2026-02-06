@@ -8,11 +8,11 @@ This is the **strict** visual system for DocliQ-aligned UI in this repo (incl. B
 
 **Sources of truth**
 - Brand PDF: `docs/z.guidelines/Docliq Brand Guide 2025.pdf`
-- Tokens (extracted from the PDF): `docs/z.guidelines/docliq-tokens.json`
+- **Tokens:** `guidelines/docliq-tokens-v2.json` (v2.0.0, updated 2026-02-05)
 - Gap Analysis: `/Users/nganpham/Downloads/Gap Analysis from Product Design.md`
 - Booking N3 implementation reference: `apps/appointment-booking-N3/src/index.css`
 
-If anything conflicts, prefer the **brand PDF**, then `docliq-tokens.json`, then app CSS.
+If anything conflicts, prefer the **brand PDF**, then `docliq-tokens-v2.json`, then app CSS.
 
 ---
 
@@ -27,7 +27,7 @@ If anything conflicts, prefer the **brand PDF**, then `docliq-tokens.json`, then
 
 ## Color (Use Semantic Tokens Only)
 
-Do not invent palettes. Use `docs/z.guidelines/docliq-tokens.json` → `color.semantic.*`.
+Do not invent palettes. Use `guidelines/docliq-tokens-v2.json` → `color.semantic.*`.
 
 ### Core Surfaces
 
@@ -69,7 +69,7 @@ Do not invent palettes. Use `docs/z.guidelines/docliq-tokens.json` → `color.se
 
 ## Typography (DM Sans)
 
-Use `typography.*` from `docliq-tokens.json`.
+Use `typography.*` from `docliq-tokens-v2.json`.
 
 ### Font Family
 
