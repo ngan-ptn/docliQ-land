@@ -32,8 +32,11 @@ docliQ-land/
 │   ├── knowledge-log.md
 │   ├── lessons-learned.md
 │   └── sum-changed.md
-├── workflows/        # Design workflows
-│   └── README.md
+├── workflows/        # Design workflow templates
+│   ├── ooux-dot-map.md
+│   ├── info-map.md
+│   ├── user-flows.md
+│   └── ...
 └── versions/
     ├── v1/           # First version
     ├── v2/           # Second version (when created)

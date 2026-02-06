@@ -2,6 +2,13 @@
 
 This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines React, TanStack Router, Hono, TRPC, and more.
 
+## Deployment
+
+Configured for Vercel deployment with:
+- Edge Functions for backend API
+- Vercel Toolbar disabled for cleaner UX
+- See `vercel.json` for configuration
+
 ## Features
 
 - **TypeScript** - For type safety and improved developer experience
